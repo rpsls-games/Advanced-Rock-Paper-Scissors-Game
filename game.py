@@ -125,8 +125,10 @@ class PredictiveStrategy(AbstractStrategy):
         if not self.context.human_moves:
             return random.choice(valid_actions)
 
+        # Find the player's most common move
         most_common = Counter(self.context.human_moves).most_common(1)[0][0]
-
+        
+        # Choose a move that would beat the player's most common move
         for action in valid_actions:
             if most_common in victories_extended.get(action, []):
                 return action
