@@ -12,7 +12,7 @@ This project is a modular, extensible, and type-safe implementation of the class
 
 - **Customizable Strategies**:
   - Random Strategy: Makes completely random choices
-  - Predictive Strategy: Analyzes your previous moves to predict your next one
+  - Predictive Strategy: Choose a move that would beat the player's most common move
 
 - **Game Modes**:
   - First to N wins: Play until someone reaches the target score
